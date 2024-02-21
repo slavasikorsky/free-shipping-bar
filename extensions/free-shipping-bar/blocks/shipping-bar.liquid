@@ -1,0 +1,39 @@
+{{ 'shipping-bar.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .progress-bar {
+    background-color: {{ block.settings.color }};
+  }
+
+  .progress-bar svg {
+    border-color: {{ block.settings.color }};
+    fill: {{ block.settings.color }};
+  }
+</style>
+
+<div class="cg-wrapper progress__wrapper ">
+  {{ block.settings.promo }}
+    <h4 class="cg-free-shipping-text text-center" style="margin-bottom:10px"><span>You're <strong style="color: var(--secondary_bg)">£23.00</strong> away from FREE shipping!</span></h4>
+
+    <div class="cg-free-shipping-bar progress progress-rounded">
+      <div class="cg-progress-bar progress-bar" role="progressbar" style="width: 54.0%">
+        {% render 'shipping-icon' %}
+      </div>
+    </div>
+  </div>
+{% schema %}
+{
+  "name": "Free shipping bar",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "promo",
+      "label": "Promocode",
+      "default": "CODE30"
+    },
+    { "type": "color", "id": "color", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+

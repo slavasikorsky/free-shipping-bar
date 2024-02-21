@@ -1,0 +1,125 @@
+.progress-bar {
+  position: relative;
+  background-color: #f00000;
+  height: 100%;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 0,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 0,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 0,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  transition: all 0.3s ease;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+.progress-bar svg {
+  position: absolute;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-color: #f00000;
+  fill: #f00000;
+  border-radius: 50%;
+  transform: translateX(50%) translateY(-10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress.progress-rounded {
+  border-radius: 6px;
+}
+.progress {
+  position: relative;
+  height: 10px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1rem 0;
+  }
+}
